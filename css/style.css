@@ -252,6 +252,7 @@ body {
   padding-left: 0px;
   margin: 0px;
   position: relative;
+  z-index: 1;
 }
 .feature-list-item {
   margin-right: 30px;
@@ -267,6 +268,7 @@ body {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   padding: 27px 132px;
+  z-index: 1;
 }
 .feature-title-two {
   position: absolute;
@@ -276,6 +278,7 @@ body {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   padding: 27px 132px;
+  z-index: 1;
 }
 .feature-title-three {
   position: absolute;
@@ -285,6 +288,7 @@ body {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   padding: 27px 132px;
+  z-index: 1;
 }
 .feature-title-description {
   color: var(--third-background-color);
@@ -671,7 +675,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.modal {
+.backdrop {
   background-color: hsla(0, 0%, 0%, 0.5);
   display: flex;
   position: fixed;
@@ -679,8 +683,7 @@ body {
   height: 100%;
   top: 0px;
   left: 0px;
-  right: 0px;
-  bottom: 0px;
+  z-index: 2;
 }
 .is-hidden {
   pointer-events: none;
@@ -689,15 +692,26 @@ body {
   transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
     skew(40deg, 40deg);
 }
-.backdrop {
-  left: 536px;
-  top: 221px;
-  bottom: 222px;
-  right: 536px;
+.modal {
+  position: relative;
   margin: auto;
   width: 528px;
   height: 581px;
   background-color: var(--third-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 2;
 }
 .x-button {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--third-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
 }
