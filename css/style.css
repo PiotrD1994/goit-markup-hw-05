@@ -205,6 +205,7 @@ body {
   cursor: pointer;
   padding: 10px 41px;
   white-space: nowrap;
+  border: none;
 }
 .button-container {
   padding-left: 500px;
@@ -268,7 +269,6 @@ body {
   padding-left: 0px;
   margin: 0px;
   position: relative;
-  z-index: 1;
 }
 .feature-list-item {
   margin-right: 30px;
@@ -284,7 +284,6 @@ body {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   padding: 27px 132px;
-  z-index: 1;
 }
 .feature-title-two {
   position: absolute;
@@ -563,6 +562,7 @@ body {
   transition-property: background-color, box-shadow, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -577,6 +577,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: none;
 }
 .portfolio-list {
   display: flex;
